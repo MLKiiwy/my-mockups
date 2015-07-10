@@ -1,0 +1,533 @@
+/**
+ * Colors :
+ * #E3001B Rouge base
+ * #F2F2F2 Grey
+ * #EF5676 Pink
+ * #E2001A Rouge variant 1
+ * #7F0D16 Rouge dark
+ * #e3001b Font rouge
+ * #474747 Font black
+ */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  color: #474747;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: #E3001B;
+  color: #E2001A;
+}
+
+::selection {
+  background-color: #E3001B;
+  color: #E2001A;
+}
+
+.croixrouge-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.croixrouge-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+  background: #64ffda !important;
+  color: black !important;
+}
+
+.croixrouge-mobile-title {
+  display: none !important;
+}
+
+.croixrouge-logo-image {
+  height: 61px;
+  width: 140px;
+}
+
+.croixrouge-header {
+  overflow: visible;
+  background-color: white;
+}
+
+  .croixrouge-header .material-icons {
+    color: #F2F2F2 !important;
+  }
+
+  .croixrouge-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #F2F2F2;
+  }
+
+  .croixrouge-header .mdl-navigation__link {
+    color: #7F0D16;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .croixrouge-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 500px;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .croixrouge-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 875px;
+  }
+
+  .croixrouge-search-box.is-focused ~ .croixrouge-navigation-container {
+    opacity: 0;
+    width: 100px;
+  }
+
+  .croixrouge-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+  }
+
+    .croixrouge-navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid #E2001A;
+    }
+
+  .croixrouge-search-box {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .croixrouge-more-button {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+.croixrouge-drawer {
+  border-right: none;
+}
+
+  .croixrouge-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+  }
+
+  .croixrouge-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #7F0D16;
+  }
+
+  .croixrouge-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #E2001A;
+  }
+
+  .croixrouge-drawer .mdl-layout-title {
+    position: relative;
+    background: #E3001B;
+    height: 160px;
+  }
+
+    .croixrouge-drawer .croixrouge-logo-image {
+      position: absolute;
+      bottom: 16px;
+    }
+
+.croixrouge-be-together-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('../images/croixrouge/slide01.jpg') center 30% no-repeat;
+  background-size: cover;
+}
+
+.croixrouge-font {
+  font-family: 'And Black', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #F2F2F2;
+  font-weight: 300;
+}
+
+.croixrouge-slogan {
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.croixrouge-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.croixrouge-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+  .croixrouge-create-character a {
+    text-decoration: none;
+    color: #F2F2F2;
+    font-weight: 300;
+  }
+
+.croixrouge-screen-section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.croixrouge-screens {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.croixrouge-screen {
+  text-align: center;
+}
+
+.croixrouge-screen .croixrouge-link {
+  margin-top: 16px;
+  display: block;
+  z-index: 2;
+}
+
+.croixrouge-image-link {
+  text-decoration: none;
+}
+
+.croixrouge-wear {
+  display: inline-block;
+  width: 160px;
+  margin-right: 32px;
+}
+
+  .croixrouge-wear .croixrouge-screen-image {
+    width: 40%;
+    z-index: 1;
+  }
+
+
+.croixrouge-phone {
+  display: inline-block;
+  width: 64px;
+  margin-right: 48px;
+}
+
+  .croixrouge-phone .croixrouge-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.croixrouge-tablet {
+  display: inline-block;
+  width: 110px;
+  margin-right: 64px;
+}
+
+  .croixrouge-tablet .croixrouge-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .croixrouge-tablet .croixrouge-link {
+    display: block;
+    z-index: 2;
+  }
+
+
+.croixrouge-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
+  .croixrouge-tv .croixrouge-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.croixrouge-auto {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+
+  .croixrouge-auto .croixrouge-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+  }
+
+
+.croixrouge-wear-section {
+  position: relative;
+  background: url('../images/croixrouge/section-wide-1.jpg') center top no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.croixrouge-wear-band {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+
+.croixrouge-wear-band-text {
+  max-width: 800px;
+  margin-left: 25%;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+  .croixrouge-wear-band-text p {
+    padding-top: 8px;
+  }
+
+.croixrouge-link {
+  text-decoration: none;
+  color: #E2001A !important;
+}
+
+  .croixrouge-link:hover {
+    color: #7cb342 !important;
+  }
+
+  .croixrouge-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.croixrouge-alt-link {
+  text-decoration: none;
+  color: #64ffda !important;
+  font-size: 16px;
+}
+
+  .croixrouge-alt-link:hover {
+    color: #00bfa5 !important;
+  }
+
+  .croixrouge-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.croixrouge-customized-section {
+  text-align: center;
+}
+
+.croixrouge-customized-section-text {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0 16px;
+}
+
+  .croixrouge-customized-section-text p {
+    padding-top: 16px;
+  }
+
+.croixrouge-customized-section-image {
+  background: url('../images/croixrouge/devices.jpg') center top no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.croixrouge-top-section {
+  padding: 80px 0;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .croixrouge-top-section .croixrouge-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+  }
+
+.croixrouge-card-container {
+}
+
+  .croixrouge-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+
+    .croixrouge-card-container .mdl-card__media img {
+      width: 100%;
+    }
+
+  .croixrouge-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+
+  .croixrouge-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .croixrouge-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 48px;
+  }
+
+  .croixrouge-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .croixrouge-card-container .mdl-card__actions a {
+    border-top: none;
+    line-height: 32px;
+    font-size: 16px;
+  }
+
+.croixrouge-footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+  .croixrouge-footer a:hover {
+    color: #E2001A;
+  }
+
+  .croixrouge-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+  }
+
+  .croixrouge-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+  }
+
+  .croixrouge-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+  }
+
+  .croixrouge-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+  }
+
+  .croixrouge-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+
+.croixrouge-link-menu:hover {
+  cursor: pointer;
+}
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .croixrouge-navigation-container {
+    display: none;
+  }
+
+  .croixrouge-title {
+    display: none !important;
+  }
+
+  .croixrouge-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .croixrouge-search-box.is-focused ~ .croixrouge-mobile-title {
+    opacity: 0;
+  }
+
+  .croixrouge-more-button {
+    display: none;
+  }
+
+  .croixrouge-search-box.is-focused {
+    width: calc(100% - 48px);
+  }
+
+  .croixrouge-search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+  }
+
+  .croixrouge-be-together-section {
+    height: 350px;
+  }
+
+  .croixrouge-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .croixrouge-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .croixrouge-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .croixrouge-create-character img {
+    height: 12px;
+  }
+
+  .croixrouge-fab {
+    display: none;
+  }
+
+  .croixrouge-wear-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .croixrouge-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}
